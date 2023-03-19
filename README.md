@@ -15,7 +15,7 @@ For using the pretrained model in a shooting game such as PUBG, you can just **e
 
 You can check the **"Configure.py"**. I believe you can understand and adjust those few lines of code.
 
-For a quick change for other usage. You can only pay attention to **"shotscreen" function in Inference**.py and **"callback" function in Callback.py** . They are the input and output of the yolo model.
+For a quick change for other usage. You can only pay attention to **"shotscreen" function in Inference.py** and **"callback" function in Callback.py** . They are the input and output of the yolo model.
 
 ## Train
 For training, I suggest you check the official website:
