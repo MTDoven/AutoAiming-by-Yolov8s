@@ -38,7 +38,7 @@ bool is_covering_the_line(Person obj){
 extern "C" __declspec(dllexport)
 void callback(float array[MAX_ITEMS][6]){
     Person persons[MAX_ITEMS]={0};
-    Person the_vary_person;
+    Person the_very_person;
     int items_count=0;
 
     for(int i=0; i<MAX_ITEMS; i++){
@@ -63,7 +63,7 @@ void callback(float array[MAX_ITEMS][6]){
                 persons[j+1] = temp; }
     for(int i=0; i<items_count; i++){
         if(is_covering_the_line(persons[i])){
-            the_vary_person = persons[i];
+            the_very_person = persons[i];
             goto ChooseFinished; }
     } // Choose the one had been aimed.
 
@@ -74,7 +74,7 @@ void callback(float array[MAX_ITEMS][6]){
                 persons[j] = persons[j+1];
                 persons[j+1] = temp; }
     if(persons[0].size > persons[1].size*4){
-        the_vary_person = persons[0];
+        the_very_person = persons[0];
         goto ChooseFinished;
     } // Choose the biggest one
 
@@ -84,13 +84,13 @@ void callback(float array[MAX_ITEMS][6]){
                 Person temp = persons[j];
                 persons[j] = persons[j+1];
                 persons[j+1] = temp; }
-    the_vary_person = persons[0];
+    the_very_person = persons[0];
     goto ChooseFinished;
     // Choose the nearest one
 
     ChooseFinished:
-    float x_direct = (the_vary_person.x1+the_vary_person.x2)/2-320;
-    float y_direct = (the_vary_person.y1+the_vary_person.y2)/2-320;
+    float x_direct = (the_very_person.x1+the_very_person.x2)/2-320;
+    float y_direct = (the_very_person.y1+the_very_person.y2)/2-320;
     ProcessForce(&x_direct, &y_direct);
     MouseMove(round(x_direct), round(y_direct));
 
