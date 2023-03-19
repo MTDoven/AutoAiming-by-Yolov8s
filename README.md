@@ -2,7 +2,7 @@
 This program is an implement of yolov8, which can help you aim in a shooting game. The biggest advantage is that it can run **extremely fast (average 98.4fps on RTX3060)**. Thanks to its high performance, similar framework may be applied to other fields, such as the tracking of high-speed moving objects.
 
 ## Requirement
-Generally speaking, **Python>=3.7 and PyTorch>=1.7** is enough. But I use **Python==3.9 and PyTorch==2.1.0 **(Originally I wanted to use torch.compline(model) to accelerate the program. But it has not supported on Windows yet). Other requirements are as follows:
+Generally speaking, **Python>=3.7 and PyTorch>=1.7** is enough. But I use **Python==3.9 and PyTorch==2.1.0** (Originally I wanted to use torch.compline(model) to accelerate the program. But it has not supported on Windows yet). Other requirements are as follows:
 
         pip install ultralytics
         pip install pyautogui
