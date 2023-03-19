@@ -13,7 +13,7 @@ Generally speaking, **Python>=3.7 and PyTorch>=1.7** is enough. But I use **Pyth
 For using the pretrained model in a shooting game such as PUBG, you can just **enter the project folder** and run 
 ``python Inference.py``. By default, **pressing the "ALT" key** to start inference and auto-aiming.
 
-You can check the **"Configure.py"**, I believe you can understand and adjust those few lines of code.
+You can check the **"Configure.py"**. I believe you can understand and adjust those few lines of code.
 
 For a quick change for other usage. You can only pay attention to **"shotscreen" function in Inference**.py and **"callback" function in Callback.py** . They are the input and output of the yolo model.
 
