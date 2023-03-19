@@ -1,0 +1,9 @@
+train: D:/DovenFiles/AILearning/AutoAiming_2.0/DataSet/train.txt
+val: D:/DovenFiles/AILearning/AutoAiming_2.0/DataSet/val.txt
+test: D:/DovenFiles/AILearning/AutoAiming_2.0/DataSet/test.txt
+
+# number of classes
+nc: 2
+
+# class names
+names: ['person',"self"]
